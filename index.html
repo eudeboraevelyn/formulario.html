@@ -1,0 +1,151 @@
+<head>
+  <title>Aula 2 - Formulário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="./styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="conteiner">
+    <h1 class="title">Faça seu cadastro</h1>
+
+    <form>
+      <div class="box">
+        <label class="label-field" for="name-field">Nome Completo</label>
+        <input
+          type="text"
+          placeholder="Digite seu nome completo"
+          id="name-field"
+          required
+        />
+      </div>
+
+      <fieldset class="group">
+        <div class="box">
+          <label for="born-field">Data de Nascimento</label>
+          <input class="placeholder" type="date" id="born-field" required />
+        </div>
+
+        <div class="box">
+          <label for="country-field">País</label>
+          <select id="country-field" required>
+            <option selected disabled value="">Selecionar</option>
+            <option>Brasil</option>
+            <option>Argentina</option>
+            <option>Paraguai</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <div>
+        <label class="genre">Genêro</label>
+        <div class="wrapper">
+          <div>
+            <input
+              type="radio"
+              id="female-field"
+              name="genre"
+              value="female-field"
+            />
+            <label for="female-field">Feminino</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="male-field"
+              name="genre"
+              value="male-field"
+            />
+            <label for="male-field">Masculino</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="declare-field"
+              name="genre"
+              value="declare-field"
+              checked
+            />
+            <label for="declare-field"> Não declarar</label>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="box">
+        <label for="email-field">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email-field"
+          placeholder="Digite seu e-mail"
+          required
+        />
+      </div>
+
+      <div class="box">
+        <label for="password-field">Senha</label>
+        <input
+          type="password"
+          placeholder="Digite sua senha"
+          id="password-field"
+          required
+        />
+      </div>
+
+      <div class="box">
+        <label for="confirm-password-field">Confirme sua Senha</label>
+        <input
+          type="password"
+          placeholder="Confirmar senha"
+          id="confirm-password-field"
+          required
+        />
+      </div>
+
+      <div class="termos-uso">
+        <p>
+          <input id="eula-field" type="checkbox" />
+
+          <label for="eula-field"
+            >Aceito os
+            <a class="target" target="_blank" href="eula.html">
+              termos e condições</a
+            >
+            e concordo com as
+            <a class="target" target="_blank" href="privacy.html"
+              >políticas de privacidade</a
+            >
+            do Hall To Code.</label
+          >
+        </p>
+      </div>
+
+      <div class="box">
+        <form action="https://www.twitch.tv/halltocode">
+          <button class="button" type="submit" onsubmit="" aria-required="true">
+            Cadastrar
+          </button>
+        </form>
+      </div>
+
+      <div class="box-register">
+        <label
+          >Já tem uma conta no Hall To Code?
+          <a
+            class="target"
+            target="_blank"
+            href="https://www.twitch.tv/halltocode"
+            >Entre agora</a
+          >
+        </label>
+      </div>
+    </form>
+  </div>
+</body>
